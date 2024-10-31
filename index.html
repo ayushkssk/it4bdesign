@@ -24,6 +24,61 @@
   
 
 <style>
+body {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), 
+                url('https://i.imgur.com/8Tyx6b7.png'); /* Subtle rangoli pattern */
+    background-attachment: fixed;
+}
+
+.container, .container-fluid {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin: 15px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #FF9933, #FF5722) !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(255, 153, 51, 0.3);
+}
+
+.display-1, .display-2 {
+    color: #8B0000 !important; /* Deep red for headings */
+}
+
+/* Diwali lights animation */
+@keyframes diwaliBlink {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.section::before {
+    content: '🪔';
+    position: absolute;
+    font-size: 24px;
+    animation: diwaliBlink 2s infinite;
+    margin: 10px;
+}
+
+/* Festive borders */
+.card {
+    border: 2px solid #FFD700;
+    background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95));
+}
+
+/* Warm text colors */
+.mbr-text {
+    color: #4A4A4A;
+}
+
+/* Festive accent colors */
+.social-list a {
+    background: linear-gradient(45deg, #FF9933, #FF5722) !important;
+}
+
 .navbar-fixed-top {
   top: auto;
 }
@@ -67,6 +122,7 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   animation: none;
   visibility: visible;
@@ -745,7 +801,14 @@
         </div>
       </div>
         <div class="col-lg-8 side-features">
-        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+        <div class="google-map">
+            <iframe 
+                frameborder="0" 
+                style="border:0" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57757.65635208815!2d84.6439355!3d25.5557144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e721cf07b29e1%3A0x9c8e7b7c7c3a99d!2sArrah%2C%20Bihar!5e0!3m2!1sen!2sin!4v1709825163099!5m2!1sen!2sin" 
+                allowfullscreen="">
+            </iframe>
+        </div>
       </div>
     </div>
   </div>
